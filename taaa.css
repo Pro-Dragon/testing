@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+}
+body {
+    background-color:#04153f;
+}
+.page_1 {
+  height: 100svh;
+  background:linear-gradient(#04192f, #04153f) ;
+}
+.logo {
+    background: none;
+    border: none;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    filter: drop-shadow(0 0 1px #ffffff8a);
+    height: 60px;
+    width: auto;
+}
+
+.lc {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+@keyframes anime {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0px, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.gfg {
+    background: none;
+    border: none;
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+}
+
+.hr {
+    position: absolute;
+    bottom: 70px;
+    left: 350px;
+}
+
+.hero-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(184, 24, 24);
+    filter: drop-shadow(0 0 5px #000000);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.cpp {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.python {
+    position: absolute;
+    top: 400px;
+    right: 150px;
+}
+
+.java {
+    position: absolute;
+    bottom: 70px;
+    right: 350px;
+}
+
+.why-us {
+  height: 100svh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.about-us {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.animation1 {
+  animation-name: animation1;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+.design {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  animation-name: animate;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode:forwards;
+  color: white;
+  box-shadow: 0 0 50px black;
+  z-index: 1;
+}
+
+.sub-design1, .sub-design2, .sub-design3, .sub-design4, .sub-design5, .sub-design6 {
+  width: 100px;
+  height: 100px;
+  background-color: wheat;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub svg, .sv{
+  animation-name: rev;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode:forwards;
+}
+svg, .sv{
+  filter: invert(1);
+}
+.pause{
+  animation-play-state: paused;
+}
+
+.sub:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.3);
+}
+
+.sub-design1 {
+  top: -50px;
+  left: 150px;
+}
+
+.sub-design2 {
+  top: 65px;
+  left: 325px;
+}
+
+.sub-design3 {
+  top: 255px;
+  left: 320px;
+}
+
+.sub-design4 {
+  top: 345px;
+  left: 150px;
+}
+
+.sub-design5 {
+  top: 250px;
+  left: -20px;
+}
+
+.sub-design6 {
+  top: 60px;
+  left: -25px;
+}
+
+@keyframes animate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rev {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes animation1 {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity:none;
+    transform: translateX(0px);
+  }
+}
+.review-section {
+  height: 60svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 6%;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1)80%, rgba(0,0,0,0));
+}
+.sub-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: absolute;
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 20px;
+  left: 1600px;
+  animation-name: scrollanimation1;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count:infinite;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(2);
+  transition-duration: 0.5s;
+  z-index: 1;
+}
+.card1 {
+  animation-delay: calc(30s / 8 * 7 * -1);
+}
+.card2 {
+  animation-delay: calc(30s / 8 * 6 * -1);
+}
+.card3 {
+  animation-delay: calc(30s / 8 * 5 * -1);
+}
+.card4 {
+  animation-delay: calc(30s / 8 * 4 * -1);
+}
+.card5 {
+  animation-delay: calc(30s / 8 * 3 * -1);
+}
+.card6 {
+  animation-delay: calc(30s / 8 * 2 * -1);
+}
+.card7 {
+  animation-delay: calc(30s / 8 * 1 * -1);
+}
+.card8 {
+  animation-delay: calc(30s / 8 * 0 * -1);
+}
+@keyframes scrollanimation1 {
+  100% {
+    left: -300px;
+  }
+}
+@media (max-width:500px) {
+  .content {
+    text-align: center;
+  }
+  .page_1 {
+    width: 200%;
+  }
+  .why-us {
+    height: 120svh;
+    width: 200%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .review-section {
+    width: 205%;
+  }
+}
