@@ -193,7 +193,9 @@ svg, .sv{
   top: 60px;
   left: -25px;
 }
-
+.sv {
+  width: 50px; height: 50px;
+}
 @keyframes animate {
   100% {
     transform: rotateZ(360deg);
@@ -235,6 +237,7 @@ svg, .sv{
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1)80%, rgba(0,0,0,0));
 }
 .sub-content {
+  font-size: 60px; z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,20 +290,60 @@ svg, .sv{
     left: -300px;
   }
 }
-@media (max-width:500px) {
+@media (max-width:768px) {
   .content {
     text-align: center;
   }
-  .page_1 {
-    width: 200%;
-  }
   .why-us {
-    height: 120svh;
-    width: 200%;
+    height: 80svh;
+    width: 100%;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
   }
-  .review-section {
-    width: 205%;
+   .hr, .lc, .gfg, .cpp, .python, .java {
+    display: none;
+   }
+   .sub-design1, .sub-design2, .sub-design3, .sub-design4, .sub-design5, .sub-design6 {
+      width: 50px;
+      height: 50px;
+   }
+   .design {
+      width: 200px;
+      height: 200px;
+   }
+   svg {
+    height: 20px;
+    width: 20px;
+  }
+  .sv {
+    height: 30px;
+    width: 30px;
+  }
+  .sub-design1 {
+    top: -25px;
+    left: 75px;
+  }
+  .sub-design2 {
+    top: 175px;
+    left: 75px;
+  }
+  .sub-design3 {
+    top: 20px;
+    left: -6px;
+  }
+  .sub-design4 {
+    top: 120px;
+    left: -15px;
+  }
+  .sub-design5 {
+    top: 120px;
+    left: 160px;
+  }
+  .sub-design6 {
+    top: 20px;
+    left: 160px;
+  }
+  .sub-content {
+    font-size: 30px;
   }
 }
